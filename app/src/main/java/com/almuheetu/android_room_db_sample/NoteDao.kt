@@ -1,6 +1,5 @@
 package com.almuheetu.android_room_db_sample
 
-import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -27,4 +26,6 @@ interface NoteDao {
 
     @Query("SELECT * FROM note_table ORDER BY priority DESC")
     fun getAllNotes(): Flow<List<Note>>
+
+
 }
